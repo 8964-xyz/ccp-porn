@@ -1,0 +1,51 @@
+---
+---
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="logo.png">
+    <link rel="shortcut icon" href="logo.png">
+    <title>CCP Porn</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+{% assign image_files = site.static_files | where: "image", true %}
+
+<body>
+    <main>
+        <nav class="navbar navbar-dark bg-primary top-nav">
+            <span class="navbar-brand">
+                CCP Porn <small> &nbsp;重口乳包图</small>
+            </span>
+            <div class="github">
+                <a href="https://github.com/8964-xyz/ccp-porn" target="_blank">
+                    <i aria-hidden="true" class="fa fa-github"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="card-deck">
+                <div class="card-columns">
+                    {% for img in image_files %}
+                    <div class="card">
+                        <a href=".{{ img.path }}" target="_blank">
+                            <img class="card-img-top" src=".{{ img.path }}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
+    </script>
+</body>
+
+</html>

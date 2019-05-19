@@ -1,0 +1,72 @@
+@import './lib/bootstrap-material-design.min.css';
+
+@import './lib/font-awesome.min.css';
+
+.bg-primary {
+    background-color: #2196F3 !important;
+}
+
+html {
+    height: 101%
+}
+
+body {
+    background-size: cover;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.top-nav {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1039;
+    flex-wrap: nowrap;
+}
+
+.blue {
+    color: #2196F3
+}
+
+.card {
+    margin-bottom: 40px;
+}
+
+#card-deck {
+    margin: 80px 0;
+}
+
+#card-deck a,
+.grey {
+    color: #747473;
+}
+
+#card-deck a:hover {
+    color: #2196F3;
+}
+
+@media screen and (min-width: 510.1px) {
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 510.1px) {
+    .navbar-brand {
+        margin-left: 0rem;
+    }
+}
+
+.fa-github,
+.fa-github:hover {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.github{
+    margin-top: 0.2rem;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
