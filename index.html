@@ -13,7 +13,7 @@
     <link href="index.css" rel="stylesheet">
 </head>
 
-{% assign image_files = site.static_files | where: "image", true %}
+{% assign image_files = site.static_files | where: "image", true | sample: site.static_files.size %}
 
 <body>
     <main>
